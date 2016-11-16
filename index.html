@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <!-- Here goes the metadata -->  
+     <meta charset="utf-8">
+     <title> HTML5 basics </title>
+     
+    <script src="script_warehouse.js"></script>
+ </head>
+ <body onload="checkTable()">
+    <h1> Welcome to the warehouse Manager </h1>
+    
+     <table id="mytab" border="1">
+    <tr>
+        <th id="first">Item</th>
+        <th id="second">Quantity</th>
+    </tr>
+    
+     </table>
+    
+
+     <button id = "button" onclick="addItem()">Add item</button>
+     
+    
+     
+    <div id="form_sample"></div>
+     
+    <form id="storeItem">
+        <br><br><br>
+        <label>Item</label> <input type="text" name="item"><br>
+        <label>Quantity</label> <input type="text" name="quantity"><br><br>
+        <input type="button" value="Insert Item" onclick="insertItem('storeItem')">
+    </form>
+     
+
+  
+     
+ </body>
+</html>
